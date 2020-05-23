@@ -36,6 +36,8 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.labelForNum = new System.Windows.Forms.Label();
             this.buttonForGuess = new System.Windows.Forms.Button();
+            this.buttonForAstr = new System.Windows.Forms.Button();
+            this.labelForAstr = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -87,6 +89,8 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.labelForAstr);
+            this.panel2.Controls.Add(this.buttonForAstr);
             this.panel2.Controls.Add(this.labelForNum);
             this.panel2.Controls.Add(this.buttonForGuess);
             this.panel2.Location = new System.Drawing.Point(427, 12);
@@ -97,20 +101,38 @@
             // labelForNum
             // 
             this.labelForNum.AutoSize = true;
-            this.labelForNum.Location = new System.Drawing.Point(165, 210);
+            this.labelForNum.Location = new System.Drawing.Point(169, 120);
             this.labelForNum.Name = "labelForNum";
             this.labelForNum.Size = new System.Drawing.Size(0, 17);
             this.labelForNum.TabIndex = 1;
             // 
             // buttonForGuess
             // 
-            this.buttonForGuess.Location = new System.Drawing.Point(99, 88);
+            this.buttonForGuess.Location = new System.Drawing.Point(101, 10);
             this.buttonForGuess.Name = "buttonForGuess";
             this.buttonForGuess.Size = new System.Drawing.Size(174, 87);
             this.buttonForGuess.TabIndex = 0;
             this.buttonForGuess.Text = "Загадай цифру от 1 до 10, и я её отгадаю";
             this.buttonForGuess.UseVisualStyleBackColor = true;
             this.buttonForGuess.Click += new System.EventHandler(this.buttonForGuess_Click);
+            // 
+            // buttonForAstr
+            // 
+            this.buttonForAstr.Location = new System.Drawing.Point(101, 259);
+            this.buttonForAstr.Name = "buttonForAstr";
+            this.buttonForAstr.Size = new System.Drawing.Size(174, 38);
+            this.buttonForAstr.TabIndex = 2;
+            this.buttonForAstr.Text = "Предскажу будущее";
+            this.buttonForAstr.UseVisualStyleBackColor = true;
+            this.buttonForAstr.Click += new System.EventHandler(this.buttonForAstr_Click);
+            // 
+            // labelForAstr
+            // 
+            this.labelForAstr.AutoSize = true;
+            this.labelForAstr.Location = new System.Drawing.Point(46, 332);
+            this.labelForAstr.Name = "labelForAstr";
+            this.labelForAstr.Size = new System.Drawing.Size(0, 17);
+            this.labelForAstr.TabIndex = 3;
             // 
             // Form1
             // 
@@ -139,6 +161,8 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label labelForNum;
         private System.Windows.Forms.Button buttonForGuess;
+        private System.Windows.Forms.Label labelForAstr;
+        private System.Windows.Forms.Button buttonForAstr;
     }
 }
 
